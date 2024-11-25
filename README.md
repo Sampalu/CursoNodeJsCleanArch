@@ -13,3 +13,8 @@ npx jest --init
 
  verbose: true no arquivo jest.config.js
 
+ instalando os tipos para autocomplete
+
+ npm i -D @types/jest
+
+npm test
