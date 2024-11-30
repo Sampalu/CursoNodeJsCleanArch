@@ -1,20 +1,45 @@
 # CursoNodeJsCleanArch
 
-Instalar jest
+## Instalar jest
 
+```
 npm i -D jest
+```
 
-Inicializar o jest
+#### Documentação
+> https://jestjs.io/
 
-npx - incia binarios
+<br>
 
+## Inicializar o jest - inicia binarios
+
+```
 npx jest --init
+```
 
+#### Perguntas da instalação
 
- verbose: true no arquivo jest.config.js
+1. Incluir configuração no package.json? **Sim**
+2. Gostaria de adicionar TypeScript? **Não**
+3. Escolha o ambiente de testes. **Node**
+4. Gostaria de adicionar coverage reports? **Sim**
+5. Qual provider. **v8**
+6. Limpar Mocks automaticamente? **Sim**
 
- instalando os tipos para autocomplete
+#### Alterações no arquivo jest.config.js
 
- npm i -D @types/jest
+```js
+verbose: true
+```
 
+## Instalando os tipos para autocomplete
+
+```
+npm i -D @types/jest
+```
+
+## Executando os testes
+
+```
 npm test
+```
