@@ -41,7 +41,7 @@ describe('Cadastrar Livro UseCase', function () {
       quantidade: 'quantidade_valida',
       autor: 'autor_valido',
       genero: 'genero_valido',
-      ISBN: 'ISBN_valido'
+      ISBN: 'ISBN_ja_cadastrado'
     };
 
     const sut = cadastrarLivroUseCase({ livrosRepository });

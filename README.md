@@ -2,7 +2,7 @@
 
 ## 1. Instalar jest
 
-```
+```bash
 npm i -D jest
 ```
 
@@ -13,7 +13,7 @@ npm i -D jest
 
 ### Inicializar o jest - inicia binarios
 
-```
+```bash
 npx jest --init
 ```
 
@@ -34,13 +34,13 @@ verbose: true
 
 ### Instalando os tipos para autocomplete
 
-```
+```bash
 npm i -D @types/jest
 ```
 
 ### Executando os testes
 
-```
+```bash
 npm test
 ```
 ## 2. Outro Assunto
