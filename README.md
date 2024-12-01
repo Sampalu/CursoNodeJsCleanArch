@@ -1,17 +1,17 @@
 # CursoNodeJsCleanArch
 
-## Instalar jest
+## 1. Instalar jest
 
 ```
 npm i -D jest
 ```
 
-#### Documentação
+### Documentação
 > https://jestjs.io/
 
 <br>
 
-## Inicializar o jest - inicia binarios
+### Inicializar o jest - inicia binarios
 
 ```
 npx jest --init
@@ -32,14 +32,20 @@ npx jest --init
 verbose: true
 ```
 
-## Instalando os tipos para autocomplete
+### Instalando os tipos para autocomplete
 
 ```
 npm i -D @types/jest
 ```
 
-## Executando os testes
+### Executando os testes
 
 ```
 npm test
 ```
+## 2. Outro Assunto
+
+# Links Uteis
+> https://github.com/simov/markdown-syntax/blob/main/syntax.md <br>
+> https://github.com/simov/markdown-syntax/blob/main/elements.md <br>
+> https://github.com/simov/markdown-syntax/blob/main/prism.md
