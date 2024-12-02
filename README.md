@@ -43,7 +43,28 @@ npm i -D @types/jest
 ```bash
 npm test
 ```
-## 2. Outro Assunto
+## 2. Instalar SQLite
+
+```bash
+npm i -D sqlite3@5
+```
+
+## 3. Instalar TypeORM
+
+> https://typeorm.io/
+
+```bash
+npm i -D sqlite3@5
+```
+
+#### Alterações no arquivo jest.config.js
+
+```js
+setupFilesAfterEnv: ['<rootDir>/src/infra/db/typeorm/setup.jest.js']
+```
+
+
+## 99. Outro Assunto
 
 # Links Uteis
 > https://github.com/simov/markdown-syntax/blob/main/syntax.md <br>

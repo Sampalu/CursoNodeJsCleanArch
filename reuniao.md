@@ -35,19 +35,19 @@
 ## Estruturas
 
 ## UsuariosRepository
-[] cadastrar: ({nome_completo, CPF, telefone, endereco, email}) => Promise<void>
-[] buscarPorCPF: (CPF) => Promise<Usuario | null>
-[] existePorCPF: (CPF) => Promise<boolean>
-[] existePorEmail: (email) => Promise<boolean>
+[X] cadastrar: ({nome_completo, CPF, telefone, endereco, email}) => Promise<void>
+[X] buscarPorCPF: (CPF) => Promise<Usuario | null>
+[X] existePorCPF: (CPF) => Promise<boolean>
+[X] existePorEmail: (email) => Promise<boolean>
 
 ## livrosRepository
-[] cadastrar: ({ nome, quantidade, autor, genero, ISBN}) => Promise<void>
-[] existePorISBN: (ISBN) => Promise<boolean>
-[] buscarPorNomeOuISBN: (valor) => Promise<array<Livro>>
+[X] cadastrar: ({ nome, quantidade, autor, genero, ISBN}) => Promise<void>
+[X] existePorISBN: (ISBN) => Promise<boolean>
+[X] buscarPorNomeOuISBN: (valor) => Promise<array<Livro>>
 
 ## emprestimosRepository
-[] emprestar: ({ livro_id, usuario_id, data_saida, data_retorno }) => Promise<void>
-[] existeLivroISBNEmprestadoPendenteUsuario: ({usuario_id, livro_id}) => Promise<void>
-[] buscarEmprestimoComLivroComUsuarioPorID: (id) => Promise<Emprestimo & {Livro: {nome}, Usuario: {nome_completo, CPF, email}}>
-[] devolver: ({ emprestimo_id, data_devolucao }) => Promise<{data_retorno}>
-[] buscarPendentesComLivroComUsuario: () => Promise<Emprestimos: {data_saida, data_retorno & Livro: {nome}, Usuario : {nome_completo, CPF}}>
+[X] emprestar: ({ livro_id, usuario_id, data_saida, data_retorno }) => Promise<void>
+[X] existeLivroISBNEmprestadoPendenteUsuario: ({usuario_id, livro_id}) => Promise<void>
+[X] buscarEmprestimoComLivroComUsuarioPorID: (id) => Promise<Emprestimo & {Livro: {nome}, Usuario: {nome_completo, CPF, email}}>
+[X] devolver: ({ emprestimo_id, data_devolucao }) => Promise<{data_retorno}>
+[X] buscarPendentesComLivroComUsuario: () => Promise<Emprestimos: {data_saida, data_retorno & Livro: {nome}, Usuario : {nome_completo, CPF}}>
