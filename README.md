@@ -63,6 +63,13 @@ npm i -D sqlite3@5
 setupFilesAfterEnv: ['<rootDir>/src/infra/db/typeorm/setup.jest.js']
 ```
 
+## 4. Instalar ZOD
+
+> https://zod.dev/
+
+```bash
+npm i zod@3
+```
 
 ## 99. Outro Assunto
 
