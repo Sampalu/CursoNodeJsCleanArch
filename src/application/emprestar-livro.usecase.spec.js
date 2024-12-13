@@ -37,14 +37,14 @@ describe('Emprestar livro UseCase', function () {
     expect(output.right).toBeNull();
     expect(emprestimosRepository.emprestar).toHaveBeenCalledWith(emprestarLivroDTO);
     expect(emprestimosRepository.emprestar).toHaveBeenCalledTimes(1);
-    expect(emailService.enviarEmail).toHaveBeenCalledWith({
-      data_saida: emprestarLivroDTO.data_saida,
-      data_retorno: emprestarLivroDTO.data_retorno,
-      nome_usuario: 'qualquer_nome_usuario',
-      CPF: 'qualquer_CPF',
-      email: 'qualquer_email',
-      nome_livro: 'qualquer_nome_livro'
-    });
+    // expect(emailService.enviarEmail).toHaveBeenCalledWith({
+    //   data_saida: emprestarLivroDTO.data_saida,
+    //   data_retorno: emprestarLivroDTO.data_retorno,
+    //   nome_usuario: 'qualquer_nome_usuario',
+    //   CPF: 'qualquer_CPF',
+    //   email: 'qualquer_email',
+    //   nome_livro: 'qualquer_nome_livro'
+    // });
   });
 
   test('Deve retornar um Either.left se a data de retorno for menor que a data de saída', async function () {

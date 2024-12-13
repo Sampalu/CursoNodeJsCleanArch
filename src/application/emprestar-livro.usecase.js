@@ -2,7 +2,7 @@
 const { AppError, Either } = require('../shared/errors');
 
 module.exports = function emprestarLivroUseCase({ emprestimosRepository, emailService }) {
-  if (!emprestimosRepository || !emailService) throw new AppError(AppError.dependencias);
+  if (!emprestimosRepository) throw new AppError(AppError.dependencias);
   return async function ({ usuario_id, livro_id, data_saida, data_retorno }) {
     const checaCampos = usuario_id && livro_id && data_saida && data_retorno;
     if (!checaCampos) throw new AppError(AppError.parametrosObrigatoriosAusentes);
@@ -24,14 +24,14 @@ module.exports = function emprestarLivroUseCase({ emprestimosRepository, emailSe
 
     const { usuario, livro } = await emprestimosRepository.buscarEmprestimoComLivroComUsuarioPorID(id);
 
-    await emailService.enviarEmail({
-      data_saida,
-      data_retorno,
-      nome_usuario: usuario.nome,
-      CPF: usuario.CPF,
-      email: usuario.email,
-      nome_livro: livro.nome
-    });
+    // await emailService.enviarEmail({
+    //   data_saida,
+    //   data_retorno,
+    //   nome_usuario: usuario.nome_completo,
+    //   CPF: usuario.CPF,
+    //   email: usuario.email,
+    //   nome_livro: livro.nome
+    // });
 
     // await sendMailQueue.add({
     //   data_saida: data_saida.toLocaleDateString('pt-BR', { timeZone: 'UTC' }),

@@ -35,7 +35,7 @@ typeormServer
       if (error instanceof ZodError) {
         return response.status(400).json({ message: 'Erro na validação', erros: error.flatten() });
       }
-      if (process.env.NODE !== 'production') console.log(error);
+      if (process.env.NODE_ENV !== 'production') console.log(error);
       return response.status(500).json({ message: 'Erro interno do servidor' });
     });
   })
