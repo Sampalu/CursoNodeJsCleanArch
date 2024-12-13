@@ -2,4 +2,3 @@ node_modules
 coverage
 src/infra/db/typeorm/typeorm.prod.js
 .env
-db.sqlite
